@@ -3,7 +3,7 @@ from aiogram.types import InputFile
 import logging
 import os
 
-API_TOKEN = '7262756578:AAGQI1zKgi2kWXzrUc2FVo3G0bmD-myuc_g'
+API_TOKEN = os.getenv("BOT_TOKEN")
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
